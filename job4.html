@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晨光阅读会</title>
+    <style>
+        .page {
+display: block;
+margin: auto;
+background-color: #FFA54C;
+box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+text-align: left;
+max-width: 800px;
+}
+.bc{
+    background-color: antiquewhite;
+}
+/* 1.后代选择器 */
+div table a{
+    color: pink;
+}
+table tr:hover{
+    background-color: bisque;
+}
+/* 2.链接伪类 */
+/* 未访问的链接 */
+a.red:link{
+    color: red;
+}
+/* 鼠标停留在链接上 */
+a.red:hover{
+    color: yellow;
+}
+a.green:link{
+    color: green;
+}
+/* 激活链接 */
+a.green:active{
+    color: rgb(138, 189, 240);
+}
+/* 已访问的链接 */
+a.green:visited{
+    color: gray;
+}
+/* 3.并集选择器 */
+h1,h2,h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* 4.id选择器 */
+p#intro{
+    text-decoration: underline;
+}
+h2#intro::selection{
+    color: #E0F2F1;
+}
+/* 5.带类名的链接 */
+a.red{
+    text-align: center;
+}
+a.green{
+    text-align: center;
+}
+/* 6.伪元素 */
+p::first-letter{
+    font-size: 200%;
+    color: tomato;
+}
+p::first-line{
+    font-style: italic;
+}
+.notice{
+    font-family: kaiti;
+}
+.center table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.center{
+    text-align: center;
+}
+h1{
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="bc">
+    <div class="page">
+        <!-- 顶部标题区 -->
+        <div><h1 style="text-align: center;color: gold;">晨光阅读会 · Morning Reading Club</h1></div>
+        <!-- 活动介绍区 -->
+        <div>
+            <h2 id="intro">“琴韵同行” 主题练琴沙龙</h2>
+            <p><b>活动定位</b><br>
+以 “互助共进、轻松练琴” 为核心，打破独自练琴的枯燥感，为不同水平的社员搭建低成本、高氛围的集体练琴平台，兼顾基础巩固与兴趣培养。<br>
+<b>活动内容</b><br>
+分层分组练琴：根据社员钢琴水平（零基础 / 初级 / 中级）划分小组，每组配备 1-2 名社团骨干担任 “陪练引导员”，针对基础指法、曲目节奏、识谱难点等进行针对性指导，避免盲目练习。<br>
+片段打卡与互评：社员提前选定本周练习曲目片段（1-2 分钟），沙龙现场轮流展示，其他社员从节奏准确性、情感表达、技巧细节等方面给出友善建议，引导员总结优化方向，帮助发现自身忽略的问题。<br>
+主题曲库共享：每期设定统一主题（如 “经典儿歌改编”“影视 OST 精选”“古典入门小品”），社团提前分享曲谱、示范音频，社员可选择同款曲目练习，现场组队合奏简易版本，感受协作乐趣。<br>
+答疑互助环节：针对练琴中遇到的常见问题（如手腕酸痛矫正、节拍器使用技巧、背谱方法），开展集体答疑，鼓励有经验的社员分享个人练琴心得，形成 “老带新、强帮弱” 的氛围。
+<b>活动亮点</b>
+低压力展示场景，缓解独奏紧张感，适合新手大胆尝试；<br>
+针对性指导 + 同伴互评，练琴效率高于独自练习，快速突破瓶颈；<br>
+主题化练习增强趣味性，兼顾基础训练与兴趣延伸，避免 “为练而练”。<br>
+<b>适合人群</b><br>
+全体社员，尤其适合零基础入门者、练习缺乏方向的初级玩家，以及希望在集体氛围中提升动力的社员。</p>
+<h2 id="intro">“指尖星光” 钢琴展演分享会</h2>
+<p><b>活动定位</b><br>
+以 “展示成果、交流审美” 为核心，打造正式且温馨的小型展演舞台，让社员在实践中提升表现力，同时通过多元曲目分享，拓宽音乐视野。<br>
+<b>活动内容</b><br>
+多元曲目展演：社员自愿报名参演，曲目风格不限（古典、流行、爵士、原创改编等），时长 3-8 分钟，鼓励结合曲目背景进行简短分享（如创作故事、个人理解），让演奏更具感染力。<br>
+嘉宾点评与交流：邀请校内音乐老师、钢琴专业学长学姐或校外资深琴师担任点评嘉宾，从技巧精进、情感诠释、舞台表现等方面给出专业建议，同时解答社员关于曲目处理、舞台心态的疑问。<br>
+互动点歌与合奏：设置 “点歌互动” 环节，现场征集想听的曲目，由有能力的社员即兴演奏或组队合作；展演尾声组织全体参演者合奏经典曲目（如《卡农》简易版、《菊次郎的夏天》齐奏），打造全员参与的高光时刻。<br>
+成果纪念与激励：为每位参演社员颁发 “展演纪念证书”，设置 “最佳表现力奖”“最具创意改编奖” 等特色奖项，现场拍摄展演视频与合影，整理后分享给社员留作纪念，增强成就感。<br>
+<b>活动亮点</b><br>
+正式舞台实践，锻炼演奏胆量与表现力，积累演出经验；<br>
+专业点评 + 多元曲目，既能精准提升技巧，又能拓宽音乐审美；<br>
+纪念证书 + 集体合奏，强化归属感与成就感，提升社团凝聚力。<br>
+<b>适合人群</b><br>
+有一定练习基础、愿意展示自我的社员，或希望观摩优秀演奏、学习曲目处理技巧的全体社员（可作为观众参与）。</p>
+        </div>
+        <!-- 活动报名信息表格区 -->
+         <div class="center">
+            <h3>晨光阅读会报名统计</h3>
+            <table border="1">
+                <tr><th>姓名</th><th>年级</th><th>联系方式</th></tr>
+                <tr><td>司徒慕白</td><td>2024级</td><td>135***7196</td></tr>
+                <tr><td>上官云景</td><td>2025级</td><td>182***3381</td></tr>
+                <tr><td><a href="Cedric_intro.html">Cedric</a></td><td>2023级</td><td>155***4142</td></tr>
+            </table>
+            <p id="intro">没有报上名的还有机会哟,期待下次相见</p>
+         </div>
+         <!-- 页面链接区 -->
+          <div class="center">
+            <a class="red" href="https://hongchenwusdnu.github.io/bookstore/job4.html">查看往期活动照片</a><br>
+            <a class="green" href="job3/job3.html">在线咨询活动详情</a>
+          </div>
+          <!-- 底部公告区 -->
+           <div class="notice">
+            <p>本次 “晨光漫读・与晓同行” 阅读会线下活动需提前 1 天通过社团小程序报名，以便预留座位与物资，报名后请勿无故缺席，如需取消请至少提前 6 小时告知工作人员；<br>
+                建议自带与 “清晨、希望” 相关的书籍，或提前查阅社团推荐书目清单，便于快速融入主题阅读；线下参与可自备水杯，现场将提供免费热水。<br>
+                活动最终解释权归本社团所有，后续新增主题场次、联合活动等信息，将第一时间通过社团群、公众号同步，敬请关注。<br>
+            </p>
+           </div>
+    </div>
+    </div>
+</body>
+</html>
